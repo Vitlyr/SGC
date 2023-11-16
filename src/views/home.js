@@ -20,7 +20,7 @@ const Home = (props) => {
       <Helmet>
         <title>SGC</title>
         <meta property="og:title" content="SGC" />
-        <link rel="icon" type="image/png" href="https://publix.vitly.xyz/images/sgc/sgc_logo.PNG"/>
+        <link rel="icon" type="image/png" href="https://public.vitly.xyz/images/sgc/sgc_logo.PNG"/>
       </Helmet>
       <header data-role="Header" className="home-navbar-interactive">
         <a
