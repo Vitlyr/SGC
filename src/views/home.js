@@ -7,6 +7,14 @@ import NavigationLinks from '../components/navigation-links'
 import './home.css'
 
 const Home = (props) => {
+
+  const searchBook = () => {
+    const bookInput = document.getElementById('bookInput').value.trim();
+    if (bookInput !== '') {
+      window.location.href = `https://library.sgctn.org/search?title=${bookInput}`;
+    }
+  };
+
   return (
     <div className="home-container">
       <Helmet>
@@ -128,8 +136,8 @@ const Home = (props) => {
           treasures spanning various genres and subjects.
         </span>
         <div className="home-container7">
-          <input type="text" required className="home-textinput input" />
-          <button type="button" className="home-button button">
+          <input type="text" required className="home-textinput input" id="bookInput"/>
+          <button type="button" className="home-button button" onClick={searchBook}>
             Search
           </button>
         </div>
